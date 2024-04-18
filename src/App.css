@@ -1,12 +1,36 @@
-#root {
+#root,
+.App {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   min-width: 100%;
+  min-height: 100%;
   margin: 0 auto;
 }
 
-/* .taskList{
-  width: 50%;
-} */
+.taskList {
+  padding: 0px;
+  min-width: fit-content;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.check, .trash {
+  margin: 6px;
+  cursor: pointer;
+}
+
+.check:hover{
+  filter: invert(47%) sepia(87%) saturate(706%) hue-rotate(132deg) brightness(93%) contrast(91%);
+  /* filter: invert(99%) sepia(59%) saturate(1291%) hue-rotate(43deg) brightness(100%) contrast(93%); */
+}
+
+.trash:hover {
+  filter: invert(26%) sepia(90%) saturate(3821%) hue-rotate(335deg) brightness(83%) contrast(110%)
+}

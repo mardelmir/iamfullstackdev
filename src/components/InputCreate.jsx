@@ -4,10 +4,8 @@ const InputCreate = () => {
     const [text, setText] = useState({ title: '' })
     const urlPost = 'http://localhost:3000/create'
 
-    const handleOnChange = (e) => {
-        setText({ title: e.target.value })
-    }
-
+    const handleOnChange = (e) => { setText({ title: e.target.value }) }
+    
     const handleSummit = async (e) => {
         e.preventDefault()
         await fetch(urlPost, {

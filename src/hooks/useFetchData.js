@@ -12,7 +12,7 @@ const useFetchData = (urlApi) => {
             } catch (error) { console.log(error) }
         }
         fetchData()
-    }, [])
+    }, [data])
 
     return { data }
 }
