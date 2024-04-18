@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom'
 
 const Home = ({ data }) => {
+  // He cambiado así el controller del back para marcar como completado con checkTask:
+      // const id = req.params._id;
+      // const taskState = await Task.findById(id)
+      // const udpatedTask = await Task.findByIdAndUpdate(
+      //  id, { completed: !taskState.completed }, { new: true })
+
   const checkTask = async (task) => {
     const urlPut = `http://localhost:3000/markascompleted/${task._id}`
     await fetch(urlPut, {
