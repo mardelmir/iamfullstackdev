@@ -7,6 +7,8 @@ import ItemDetailPage from './components/ItemDetailPage.jsx';
 import InputCreate from './components/InputCreate.jsx';
 
 const App = () => {
+  //const urlApi = import.meta.env.VITE_APP_API_URL
+  
   const urlApi = 'http://localhost:3000'
   const { data } = useFetchData(urlApi)
 
